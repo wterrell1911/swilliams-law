@@ -1,0 +1,21 @@
+<svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Zero-Focus Design: Curly braces around the "0" only -->
+
+  <!-- "3" - standalone -->
+  <text x="105" y="95" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="64" fill="#1a1a1a" text-anchor="middle" font-weight="700">3</text>
+
+  <!-- Left curly brace around "0" - heavy weight -->
+  <path d="M 130,45 Q 122,45 122,52 L 122,68 Q 122,72 118,72 Q 122,72 122,76 L 122,98 Q 122,105 130,105" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- "0" - in the middle with braces -->
+  <text x="150" y="95" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="64" fill="#1a1a1a" text-anchor="middle" font-weight="700">0</text>
+
+  <!-- Right curly brace around "0" - heavy weight -->
+  <path d="M 170,45 Q 178,45 178,52 L 178,68 Q 178,72 182,72 Q 178,72 178,76 L 178,98 Q 178,105 170,105" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- "2" - standalone -->
+  <text x="195" y="95" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="64" fill="#1a1a1a" text-anchor="middle" font-weight="700">2</text>
+
+  <!-- Bullet separator between words -->
+  <text x="150" y="125" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="9" fill="#d1d5db" text-anchor="middle" letter-spacing="3" font-weight="300">DIGITAL • ADVISORY</text>
+</svg>

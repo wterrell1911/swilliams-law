@@ -4,57 +4,63 @@ import { ScrollReveal, ScrollRevealItem } from "@/components/animations/ScrollRe
 
 const reasons = [
   {
+    title: "No Fee Unless We Win",
+    description:
+      "We work on a contingency fee basis. You pay nothing upfront, and we only get paid when we recover compensation for you. Zero financial risk.",
     icon: (
-      <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0012 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 01-2.031.352 5.988 5.988 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.97zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0l2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 01-2.031.352 5.989 5.989 0 01-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.97z" />
+      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: "We have been inside a law firm",
-    description: "We understand intake workflows, ethics rules, and client relationships. That context shapes every tool we build. Most vendors learn legal from the outside. We built from the inside.",
   },
   {
+    title: "Aggressive Yet Compassionate",
+    description:
+      "Attorney Williams is known for her aggressive courtroom presence combined with genuine care for her clients. You get a fighter who treats you like family.",
     icon: (
-      <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
       </svg>
     ),
-    title: "Every tool is built for confidentiality",
-    description: "Attorney-client privilege is not an afterthought. Every AI workflow and automation system we build is designed around your ethics obligations and your bar's rules of professional conduct.",
   },
   {
+    title: "Two States, One Mission",
+    description:
+      "Licensed in both Georgia and Mississippi with offices in Atlanta and Jackson. Whether your injury happened in either state, we can represent you.",
     icon: (
-      <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941" />
+      <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
       </svg>
     ),
-    title: "We report on results, not activity",
-    description: "No reports full of impressions and click rates. We track hours saved, leads captured, and consults booked. If we cannot show you the return in plain numbers, we have not done our job.",
   },
 ]
 
 export function WhyChooseUsSection() {
   return (
-    <section className="py-20 bg-navy-950">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-        <ScrollReveal className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-display font-bold text-warmWhite mb-4">
-            {/* TODO: Phase 3 — read firm name from firmConfig */}
-            Why Choose Us
-          </h2>
+    <section className="py-20 lg:py-28 bg-navy-950">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <p className="uppercase text-xs tracking-[0.2em] text-gold-500 mb-4">Why Choose Us</p>
+            <h2 className="text-3xl sm:text-4xl font-display font-bold text-warmWhite">
+              What Sets Us Apart
+            </h2>
+          </div>
         </ScrollReveal>
 
-        <ScrollReveal stagger staggerDelay={0.15}>
-          <div className="grid md:grid-cols-3 gap-8">
-            {reasons.map((reason, i) => (
-              <ScrollRevealItem key={i}>
+        <ScrollReveal stagger>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {reasons.map((reason) => (
+              <ScrollRevealItem key={reason.title}>
                 <div className="text-center">
-                  <div className="text-gold-500 flex justify-center mb-4">
+                  <div className="inline-flex items-center justify-center w-14 h-14 bg-gold-500/10 rounded-xl text-gold-500 mb-6">
                     {reason.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-warmWhite mb-3">
+                  <h3 className="text-xl font-display font-semibold text-warmWhite mb-3">
                     {reason.title}
                   </h3>
-                  <p className="text-warmWhite/60 leading-relaxed">
+                  <p className="text-warmWhite/70 text-sm leading-relaxed">
                     {reason.description}
                   </p>
                 </div>

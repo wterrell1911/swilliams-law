@@ -1,34 +1,51 @@
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
-// TODO: Phase 3 — replace SVG logo with firm logo from firmConfig.branding.logo
-// This is a placeholder logo showing "LAW FIRM" text
 export function Logo({ className = "" }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 200 60"
-      xmlns="http://www.w3.org/2000/svg"
-      className={cn("h-14 w-auto", className)}
-      aria-label="Firm Logo"
-    >
-      {/* Scale of justice icon */}
-      <path d="M 30,8 L 30,48 M 20,48 L 40,48 M 18,18 L 42,18 M 18,18 L 14,30 Q 22,34 26,30 L 22,18 M 38,18 L 34,30 Q 38,34 46,30 L 42,18" fill="none" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      {/* Firm name placeholder */}
-      <text x="55" y="28" fontFamily="'Inter', 'Helvetica Neue', Arial, sans-serif" fontSize="18" fill="currentColor" fontWeight="700">LAW FIRM</text>
-      <text x="55" y="46" fontFamily="'Inter', 'Helvetica Neue', Arial, sans-serif" fontSize="10" fill="currentColor" fillOpacity="0.6" letterSpacing="2" fontWeight="400">TEMPLATE</text>
-    </svg>
+    <div className={cn("flex items-center gap-3", className)}>
+      {/* Scales of Justice Icon */}
+      <svg
+        viewBox="0 0 40 40"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-10 w-10 flex-shrink-0"
+      >
+        <circle cx="20" cy="20" r="19" stroke="#C9A227" strokeWidth="2" />
+        <path
+          d="M20 8v24M14 12h12M10 18l4-6M26 12l4 6M10 18c0 2.5 1.8 4 4 4s4-1.5 4-4M22 18c0 2.5 1.8 4 4 4s4-1.5 4-4"
+          stroke="#C9A227"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle cx="20" cy="8" r="2" fill="#C9A227" />
+      </svg>
+      <div className="flex flex-col leading-tight">
+        <span className="text-sm font-display font-bold tracking-wide">S. WILLIAMS</span>
+        <span className="text-[10px] tracking-[0.2em] opacity-70">LAW FIRM</span>
+      </div>
+    </div>
   )
 }
 
 export function LogoIcon({ className = "" }: { className?: string }) {
   return (
     <svg
-      viewBox="0 0 50 50"
+      viewBox="0 0 40 40"
+      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={cn("h-10 w-auto", className)}
-      aria-label="Firm Logo"
+      className={cn("h-8 w-8", className)}
     >
-      {/* Scale of justice icon */}
-      <path d="M 25,5 L 25,42 M 17,42 L 33,42 M 13,15 L 37,15 M 13,15 L 9,27 Q 17,31 21,27 L 17,15 M 33,15 L 29,27 Q 33,31 41,27 L 37,15" fill="none" stroke="#D4AF37" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <circle cx="20" cy="20" r="19" stroke="#C9A227" strokeWidth="2" />
+      <path
+        d="M20 8v24M14 12h12M10 18l4-6M26 12l4 6M10 18c0 2.5 1.8 4 4 4s4-1.5 4-4M22 18c0 2.5 1.8 4 4 4s4-1.5 4-4"
+        stroke="#C9A227"
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle cx="20" cy="8" r="2" fill="#C9A227" />
     </svg>
   )
 }

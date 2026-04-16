@@ -40,8 +40,8 @@ function DropdownMenu({ item, onItemClick }: { item: NavDropdown; onItemClick?: 
 
       {/* Dropdown Panel */}
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-[600px] bg-navy-900 border border-navy-700 rounded-xl shadow-xl shadow-black/30 p-6 z-50">
-          <div className="grid grid-cols-3 gap-6">
+        <div className="absolute top-full left-0 mt-2 w-[320px] bg-navy-900 border border-navy-700 rounded-xl shadow-xl shadow-black/30 p-6 z-50">
+          <div className="space-y-4">
             {item.items.map((section) => (
               <div key={section.title}>
                 <h4 className="text-xs font-bold uppercase tracking-wider text-gold-500 mb-3">
@@ -77,11 +77,11 @@ function DropdownMenu({ item, onItemClick }: { item: NavDropdown; onItemClick?: 
           </div>
           <div className="mt-4 pt-4 border-t border-navy-700">
             <Link
-              href="/pricing"
+              href="/contact"
               onClick={onItemClick}
               className="text-sm text-warmWhite/70 hover:text-gold-500 transition-colors flex items-center gap-1"
             >
-              See all pricing
+              Free Case Evaluation
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

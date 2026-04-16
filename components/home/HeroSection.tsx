@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/Button"
 import { FadeIn } from "@/components/animations/FadeIn"
+import { PhoneNumber } from "@/components/PhoneNumber"
 
 export function HeroSection() {
   return (
@@ -17,52 +18,47 @@ export function HeroSection() {
 
       {/* Gradient Orbs */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-gold-500/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-electric-500/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 -right-32 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Eyebrow */}
           <FadeIn>
             <p className="uppercase text-xs sm:text-[13px] tracking-[0.2em] text-gold-500 mb-10">
-              For lawyers. By lawyers.
+              Atlanta Personal Injury Lawyer
             </p>
           </FadeIn>
 
           {/* Headline */}
           <FadeIn delay={0.1}>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-warmWhite mb-6 leading-tight max-w-[850px] mx-auto">
-              Your judgment is the product. We build everything else.
+              Where Clients Become Family
             </h1>
           </FadeIn>
 
           {/* Subheadline */}
           <FadeIn delay={0.2}>
             <p className="text-lg sm:text-xl text-warmWhite/70 mb-10 max-w-[700px] mx-auto leading-relaxed">
-              The intake calls. The follow-up emails. The scheduling. The status updates. None of it requires a law degree, but all of it is eating your day. We automate the infrastructure so you spend your time on the work only you can do. That is what we build. That is all we build.
+              When you&apos;re injured, you need more than a lawyer — you need someone who fights for you like family. S. Williams Law Firm represents personal injury and workers&apos; compensation victims across Georgia and Mississippi. No fee unless we win.
             </p>
           </FadeIn>
 
           {/* CTA Buttons */}
           <FadeIn delay={0.4}>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              {/* TODO: Phase 3 — CTA links from firmConfig */}
-              <Link href="/practice-areas">
-                <Button size="lg" variant="primary">
-                  Our Practice Areas
-                </Button>
-              </Link>
               <Link href="/contact">
-                <Button size="lg" variant="outline">
-                  Free Consultation
+                <Button size="lg" variant="primary">
+                  Free Case Evaluation
                 </Button>
               </Link>
+              <PhoneNumber className="inline-flex items-center justify-center px-6 py-3 border border-gold-500/50 text-warmWhite hover:bg-gold-500/10 rounded-md transition-colors text-base font-medium" />
             </div>
           </FadeIn>
 
           {/* Trust line */}
           <FadeIn delay={0.6}>
             <p className="text-warmWhite/60 text-sm mt-6">
-              No contracts. Cancel anytime. For lawyers, by lawyers.
+              No fee unless we win. Offices in Atlanta, GA &amp; Jackson, MS. Se Habla Espa&ntilde;ol.
             </p>
           </FadeIn>
         </div>

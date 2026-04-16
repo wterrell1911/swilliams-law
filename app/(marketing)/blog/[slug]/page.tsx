@@ -31,8 +31,7 @@ export async function generateMetadata({
   }
 
   return {
-    // TODO: Phase 3 — read firm name from firmConfig
-    title: `${post.title} | Blog`,
+    title: `${post.title} | S. Williams Law Firm`,
     description: post.excerpt,
     keywords: post.tags,
     openGraph: {

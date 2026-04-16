@@ -1,26 +1,28 @@
-// TODO: Phase 2 — replace with reads from firm.config.ts via @/lib/firm-config
+import { firmConfig } from "./firm.config"
+
 export const siteConfig = {
-  name: "[Firm Name]",
-  description: "Law firm website powered by the lawfirm-template.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-  ogImage: "/og/default.jpg",
+  name: firmConfig.identity.name,
+  description: firmConfig.identity.elevatorPitch,
+  url: firmConfig.seo.siteUrl,
+  ogImage: firmConfig.seo.defaultOgImage,
   links: {
     twitter: "",
     linkedin: "",
   },
   contact: {
-    email: "contact@example.com",
-    phone: "(555) 000-0000",
+    email: firmConfig.identity.email,
+    phone: firmConfig.identity.phone,
+    phoneTel: firmConfig.identity.phoneTel,
   },
   company: {
-    legalName: "[Firm Legal Name]",
-    foundingYear: 2020,
+    legalName: firmConfig.identity.legalName,
+    foundingYear: firmConfig.identity.foundedYear,
     address: {
-      streetAddress: "123 Main Street",
-      city: "Anytown",
-      state: "ST",
-      postalCode: "00000",
-      country: "US",
+      streetAddress: firmConfig.locations[0].streetAddress,
+      city: firmConfig.locations[0].city,
+      state: firmConfig.locations[0].state,
+      postalCode: firmConfig.locations[0].postalCode,
+      country: firmConfig.locations[0].country,
     },
   },
 }

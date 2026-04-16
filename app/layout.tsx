@@ -5,19 +5,20 @@ import { siteConfig } from "@/config/site"
 import { JsonLd } from "@/components/seo/JsonLd"
 import { generateOrganizationSchema, generateLocalBusinessSchema } from "@/lib/structured-data"
 
-// TODO: Phase 3 — read all metadata from firmConfig
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`,
+    default: "S. Williams Law Firm | Atlanta Personal Injury Lawyer",
+    template: `%s | S. Williams Law Firm`,
   },
   description: siteConfig.description,
   keywords: [
-    "law firm",
-    "attorney",
-    "legal services",
-    "lawyer",
+    "personal injury attorney",
+    "Atlanta personal injury lawyer",
+    "workers compensation lawyer",
+    "car accident attorney",
+    "Georgia injury lawyer",
+    "Mississippi injury lawyer",
   ],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
-    title: siteConfig.name,
+    title: "S. Williams Law Firm | Atlanta Personal Injury Lawyer",
     description: siteConfig.description,
     siteName: siteConfig.name,
     images: [
@@ -39,10 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
+    title: "S. Williams Law Firm | Atlanta Personal Injury Lawyer",
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    // TODO: Phase 3 — read from firmConfig.seo.twitterHandle
   },
   robots: {
     index: true,
@@ -65,7 +65,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${displayFont.variable}`}>
       <head>
-        {/* TODO: Phase 3 — read GA4 ID from firmConfig.integrations.ga4Id */}
         {process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`} />
@@ -83,7 +82,6 @@ export default function RootLayout({
         )}
         <JsonLd data={generateOrganizationSchema()} />
         <JsonLd data={generateLocalBusinessSchema()} />
-        {/* CallRail Dynamic Number Insertion — loads async, swaps .callrail-phone elements */}
         {process.env.NEXT_PUBLIC_CALLRAIL_COMPANY_ID && (
           <script
             async

@@ -697,7 +697,6 @@ function ProspectModal({ prospect, onSave, onClose }: ProspectModalProps) {
               type="url"
               value={form.demo_url || ""}
               onChange={(e) => setForm({ ...form, demo_url: e.target.value })}
-              {/* TODO: Phase 3 — read demo URL pattern from firmConfig */}
               placeholder="https://demo.yourfirm.com"
               className="w-full h-10 px-3 text-sm rounded-lg bg-navy-800 border border-navy-700 text-warmWhite focus:outline-none focus:ring-1 focus:ring-gold-500"
             />

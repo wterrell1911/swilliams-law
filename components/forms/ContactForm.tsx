@@ -6,13 +6,13 @@ import { TextArea } from "@/components/ui/TextArea"
 import { Button } from "@/components/ui/Button"
 import { contactSchema, type ContactInput } from "@/lib/validations"
 
-const services = [
-  "Law Firm Marketing",
-  "Trade Advisory",
-  "SEO Services",
-  "Content Marketing",
-  "Video Production",
-  "Other",
+const caseTypes = [
+  "Car Accident",
+  "Truck Accident",
+  "Workers' Compensation",
+  "Slip and Fall",
+  "Wrongful Death",
+  "Other Personal Injury",
 ]
 
 export function ContactForm() {
@@ -144,7 +144,7 @@ export function ContactForm() {
       {/* Service Interest */}
       <div>
         <label htmlFor="service" className="block text-sm font-medium text-warmWhite mb-2">
-          Service Interest *
+          What happened? *
         </label>
         <select
           id="service"
@@ -155,10 +155,10 @@ export function ContactForm() {
           required
           className="flex h-12 w-full rounded-md border border-navy-600 bg-navy-800 px-4 py-2 text-base text-warmWhite focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-transparent disabled:cursor-not-allowed disabled:opacity-50 transition-all duration-200 hover:border-navy-500"
         >
-          <option value="">Select a service</option>
-          {services.map((service) => (
-            <option key={service} value={service}>
-              {service}
+          <option value="">Select your case type</option>
+          {caseTypes.map((caseType) => (
+            <option key={caseType} value={caseType}>
+              {caseType}
             </option>
           ))}
         </select>
@@ -168,7 +168,7 @@ export function ContactForm() {
       {/* Message */}
       <div>
         <label htmlFor="message" className="block text-sm font-medium text-warmWhite mb-2">
-          Message *
+          Tell us about your case *
         </label>
         <TextArea
           id="message"
@@ -191,7 +191,7 @@ export function ContactForm() {
         className="w-full"
         disabled={status === "loading"}
       >
-        {status === "loading" ? "Sending..." : "Send Message"}
+        {status === "loading" ? "Sending..." : "Get Your Free Case Evaluation"}
       </Button>
 
       {/* Status Messages */}

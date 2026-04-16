@@ -23,11 +23,10 @@ export default function BlogPage() {
         {/* Hero */}
         <ScrollReveal className="text-center mb-16 max-w-4xl mx-auto">
           <h1 className="text-5xl sm:text-6xl font-display font-bold text-warmWhite mb-6">
-            Marketing Insights & <span className="text-gradient">Expertise</span>
+            Legal Insights & <span className="text-gold-500">Resources</span>
           </h1>
           <p className="text-xl text-warmWhite/80 leading-relaxed">
-            Expert insights on law firm marketing, SEO strategies, AI in legal marketing,
-            and international trade compliance. Learn from industry professionals.
+            Expert insights on personal injury law, workers&apos; compensation, and your legal rights in Georgia and Mississippi.
           </p>
         </ScrollReveal>
 

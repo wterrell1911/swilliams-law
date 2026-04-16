@@ -2,23 +2,25 @@
 
 import { FadeIn } from "@/components/animations/FadeIn"
 
-const signals = [
-  "Built by practicing attorneys",
-  "AI designed around legal ethics",
-  "Automation, AI assistants, and websites",
-  "No contracts. Cancel anytime.",
+const trustSignals = [
+  "Licensed in Georgia & Mississippi",
+  "No Fee Unless We Win",
+  "Over $3M Recovered for Clients",
+  "Se Habla Espa\u00F1ol",
 ]
 
 export function CredibilityBar() {
   return (
-    <section className="py-4 bg-navy-800/50 border-y border-navy-700">
+    <section className="bg-navy-800/50 border-y border-navy-700/50 py-4">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <FadeIn>
-          <div className="flex flex-wrap justify-center items-center gap-x-8 gap-y-2 text-center">
-            {signals.map((signal, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <span className="text-gold-500">✓</span>
-                <span className="text-warmWhite/70 text-sm">{signal}</span>
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
+            {trustSignals.map((signal) => (
+              <div key={signal} className="flex items-center gap-2 text-warmWhite/80 text-sm">
+                <svg className="w-4 h-4 text-gold-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                </svg>
+                <span>{signal}</span>
               </div>
             ))}
           </div>

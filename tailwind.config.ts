@@ -10,28 +10,28 @@ const config: Config = {
     extend: {
       colors: {
         navy: {
-          950: '#0a0e1a',
-          900: '#0f172a',
-          800: '#1e293b',
-          700: '#334155',
-          600: '#475569',
+          950: '#001208',   // primaryDark — near black green
+          900: '#002A1A',   // primary — deep forest green
+          800: '#003D24',   // primaryLight
+          700: '#00522F',
+          600: '#006B3A',
         },
         gold: {
-          500: '#f59e0b',
-          400: '#fbbf24',
-          300: '#fcd34d',
+          500: '#C9A227',   // accent gold
+          400: '#D4B44A',
+          300: '#DFCA6D',
         },
         electric: {
           500: '#3b82f6',
           400: '#60a5fa',
         },
         warmWhite: {
-          DEFAULT: '#fafaf9',
+          DEFAULT: '#f8f8f5',
         }
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        display: ['var(--font-display)', 'system-ui', 'sans-serif'],
+        display: ['var(--font-display)', 'Georgia', 'serif'],
       },
       fontSize: {
         '7xl': ['5rem', { lineHeight: '1.1', letterSpacing: '-0.02em' }],

@@ -1,68 +1,54 @@
-// TODO: Phase 3 — replace hardcoded titles with reads from firm.config.ts
-
 export const seoKeywords = {
   primary: [
-    "law firm",
-    "attorney",
-    "legal services",
-    "lawyer",
+    "personal injury attorney",
+    "Atlanta personal injury lawyer",
+    "workers compensation lawyer",
+    "car accident attorney Atlanta",
+    "Georgia injury lawyer",
   ],
   secondary: [
-    "personal injury attorney",
-    "legal consultation",
     "free case evaluation",
+    "no fee unless we win",
+    "truck accident lawyer",
+    "wrongful death attorney",
+    "slip and fall attorney",
+    "Mississippi injury lawyer",
   ],
 }
 
 export const defaultSEO = {
-  title: "[Firm Name] | Attorneys at Law",
+  title: "S. Williams Law Firm | Atlanta Personal Injury Lawyer",
   description:
-    "Experienced attorneys serving your community. Contact us for a free consultation.",
+    "S. Williams Law Firm represents personal injury and workers' compensation victims across Georgia and Mississippi. No fee unless we win. Free case evaluation.",
   keywords: [...seoKeywords.primary, ...seoKeywords.secondary],
 }
 
 export const pageMetadata = {
   home: {
-    title: "[Firm Name] | Attorneys at Law",
+    title: "S. Williams Law Firm | Atlanta Personal Injury Lawyer",
     description:
-      "Experienced attorneys serving your community. Contact us for a free consultation.",
+      "S. Williams Law Firm represents personal injury and workers' compensation victims across Georgia and Mississippi. No fee unless we win. Free case evaluation.",
     keywords: [
-      "law firm",
-      "attorney",
-      "legal services",
-      "free consultation",
-    ],
-  },
-  pricing: {
-    title: "Our Services | [Firm Name]",
-    description:
-      "Learn about our legal services and practice areas. Free initial consultation available.",
-    keywords: [
-      "legal services",
-      "practice areas",
-      "free consultation",
+      "personal injury attorney Atlanta",
+      "workers compensation lawyer Georgia",
+      "car accident lawyer Atlanta",
+      "free case evaluation",
     ],
   },
   blog: {
-    title: "Legal Insights | [Firm Name] Blog",
+    title: "Legal Blog | S. Williams Law Firm",
     description:
-      "Expert legal insights and updates from our attorneys.",
+      "Legal insights and resources from S. Williams Law Firm. Learn about personal injury claims, workers' compensation, and your legal rights in Georgia and Mississippi.",
     keywords: [
-      "legal blog",
-      "attorney insights",
-      "legal updates",
+      "personal injury blog",
+      "legal advice Georgia",
+      "workers comp resources",
     ],
   },
   contact: {
-    title: "Contact Us | [Firm Name]",
+    title: "Free Case Evaluation | S. Williams Law Firm",
     description:
-      "Contact our attorneys for a free consultation. We're here to help with your legal needs.",
-    keywords: ["contact attorney", "free consultation", "legal help"],
-  },
-  onboard: {
-    title: "Client Onboarding | [Firm Name]",
-    description:
-      "Complete your client onboarding to get started with our firm.",
-    keywords: ["client onboarding", "new client"],
+      "Contact S. Williams Law Firm for a free case evaluation. Personal injury and workers' compensation attorneys in Atlanta, GA and Jackson, MS.",
+    keywords: ["free case evaluation", "contact attorney", "personal injury lawyer"],
   },
 }

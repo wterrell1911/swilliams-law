@@ -28,33 +28,46 @@ export function isDropdown(entry: NavEntry): entry is NavDropdown {
   return "items" in entry
 }
 
-// TODO: Phase 3 — populate from firm.config.ts practice areas
 export const mainNavigation: NavEntry[] = [
   {
     name: "Practice Areas",
-    href: "/practice-areas",
-    description: "Our areas of legal expertise",
+    items: [
+      {
+        title: "Our Practice Areas",
+        items: [
+          { name: "Car Accidents", href: "/practice-areas/car-accidents", description: "Auto collision and car wreck cases" },
+          { name: "Truck Accidents", href: "/practice-areas/truck-accidents", description: "18-wheeler and commercial vehicle crashes" },
+          { name: "Workers' Compensation", href: "/practice-areas/workers-compensation", description: "Workplace injuries and workers' comp claims" },
+          { name: "Slip and Fall", href: "/practice-areas/slip-and-fall", description: "Premises liability and property owner negligence" },
+          { name: "Wrongful Death", href: "/practice-areas/wrongful-death", description: "Fatal accident and wrongful death claims" },
+        ],
+      },
+    ],
   },
   {
     name: "About",
     href: "/about",
-    description: "Our firm and attorneys",
+    description: "Our firm and attorney",
   },
   {
     name: "Blog",
     href: "/blog",
-    description: "Legal insights and updates",
+    description: "Legal insights and resources",
   },
   {
     name: "Contact",
     href: "/contact",
-    description: "Get in touch",
+    description: "Free case evaluation",
   },
 ]
 
 export const footerLinks = {
   practiceAreas: [
-    // TODO: Phase 3 — populate from firm.config.ts practice areas
+    { name: "Car Accidents", href: "/practice-areas/car-accidents" },
+    { name: "Truck Accidents", href: "/practice-areas/truck-accidents" },
+    { name: "Workers' Compensation", href: "/practice-areas/workers-compensation" },
+    { name: "Slip and Fall", href: "/practice-areas/slip-and-fall" },
+    { name: "Wrongful Death", href: "/practice-areas/wrongful-death" },
   ],
   resources: [
     { name: "Blog", href: "/blog" },

@@ -1,16 +1,35 @@
 import { MetadataRoute } from "next"
 import { siteConfig } from "@/config/site"
 import { getAllPosts } from "@/lib/mdx"
+import { firmConfig } from "@/config/firm.config"
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/about", "/blog", "/contact", "/privacy", "/terms"].map((route) => ({
+  const routes = ["", "/about", "/blog", "/contact", "/practice-areas", "/privacy", "/terms"].map((route) => ({
     url: `${siteConfig.url}${route}`,
     lastModified: new Date(),
     changeFrequency: "weekly" as const,
     priority: route === "" ? 1 : 0.8,
   }))
 
-  // Include blog posts in sitemap
+  // Practice area pages
+  const practiceAreaRoutes = firmConfig.practiceAreas.map((area) => ({
+    url: `${siteConfig.url}/practice-areas/${area.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }))
+
+  // Location pages
+  const locationRoutes = firmConfig.locations
+    .filter((loc) => loc.hasLocationPage)
+    .map((loc) => ({
+      url: `${siteConfig.url}/locations/${loc.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }))
+
+  // Blog posts
   const posts = getAllPosts()
   const blogRoutes = posts.map((post) => ({
     url: `${siteConfig.url}/blog/${post.slug}`,
@@ -19,7 +38,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  // TODO: Phase 3 — add practice area pages, attorney pages, location pages from firm.config.ts
-
-  return [...routes, ...blogRoutes]
+  return [...routes, ...practiceAreaRoutes, ...locationRoutes, ...blogRoutes]
 }

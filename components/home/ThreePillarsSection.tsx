@@ -4,6 +4,14 @@ import Link from "next/link"
 import { ScrollReveal, ScrollRevealItem } from "@/components/animations/ScrollReveal"
 import { firmConfig } from "@/config/firm.config"
 
+const cityPracticeLinks: Record<string, string> = {
+  "car-accidents": "/atlanta/car-accident-lawyer",
+  "truck-accidents": "/atlanta/personal-injury-lawyer",
+  "workers-compensation": "/atlanta/workers-compensation-lawyer",
+  "slip-and-fall": "/atlanta/slip-and-fall-lawyer",
+  "wrongful-death": "/atlanta/wrongful-death-attorney",
+}
+
 const practiceAreaIcons: Record<string, React.ReactNode> = {
   "car-accidents": (
     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,7 +63,7 @@ export function ThreePillarsSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {practiceAreas.map((area) => (
               <ScrollRevealItem key={area.slug}>
-                <Link href={`/practice-areas/${area.slug}`} className="block group">
+                <Link href={cityPracticeLinks[area.slug] || `/practice-areas/${area.slug}`} className="block group">
                   <div className="bg-navy-900 border border-navy-700/50 rounded-xl p-8 h-full hover:border-gold-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-gold-500/5">
                     <div className="text-gold-500 mb-4">
                       {practiceAreaIcons[area.slug]}

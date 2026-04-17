@@ -321,6 +321,19 @@ export const firmConfig = {
     },
   ],
 
+  cityPracticePages: [
+    { city: "atlanta", cityName: "Atlanta", state: "Georgia", stateAbbr: "GA", locationSlug: "atlanta", practiceSlug: "personal-injury-lawyer", practiceLabel: "Personal Injury Lawyer" },
+    { city: "atlanta", cityName: "Atlanta", state: "Georgia", stateAbbr: "GA", locationSlug: "atlanta", practiceSlug: "workers-compensation-lawyer", practiceLabel: "Workers' Compensation Lawyer" },
+    { city: "atlanta", cityName: "Atlanta", state: "Georgia", stateAbbr: "GA", locationSlug: "atlanta", practiceSlug: "wrongful-death-attorney", practiceLabel: "Wrongful Death Attorney" },
+    { city: "atlanta", cityName: "Atlanta", state: "Georgia", stateAbbr: "GA", locationSlug: "atlanta", practiceSlug: "car-accident-lawyer", practiceLabel: "Car Accident Lawyer" },
+    { city: "atlanta", cityName: "Atlanta", state: "Georgia", stateAbbr: "GA", locationSlug: "atlanta", practiceSlug: "slip-and-fall-lawyer", practiceLabel: "Slip & Fall Lawyer" },
+    { city: "jackson", cityName: "Jackson", state: "Mississippi", stateAbbr: "MS", locationSlug: "jackson-ms", practiceSlug: "personal-injury-lawyer", practiceLabel: "Personal Injury Lawyer" },
+    { city: "jackson", cityName: "Jackson", state: "Mississippi", stateAbbr: "MS", locationSlug: "jackson-ms", practiceSlug: "workers-compensation-lawyer", practiceLabel: "Workers' Compensation Lawyer" },
+    { city: "jackson", cityName: "Jackson", state: "Mississippi", stateAbbr: "MS", locationSlug: "jackson-ms", practiceSlug: "wrongful-death-attorney", practiceLabel: "Wrongful Death Attorney" },
+    { city: "jackson", cityName: "Jackson", state: "Mississippi", stateAbbr: "MS", locationSlug: "jackson-ms", practiceSlug: "car-accident-lawyer", practiceLabel: "Car Accident Lawyer" },
+    { city: "jackson", cityName: "Jackson", state: "Mississippi", stateAbbr: "MS", locationSlug: "jackson-ms", practiceSlug: "slip-and-fall-lawyer", practiceLabel: "Slip & Fall Lawyer" },
+  ],
+
   intake: {
     caseTypes: [
       { value: "car-accident", label: "Car Accident", practiceAreaSlug: "car-accidents" },

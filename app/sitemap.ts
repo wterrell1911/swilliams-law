@@ -38,5 +38,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
 
-  return [...routes, ...practiceAreaRoutes, ...locationRoutes, ...blogRoutes]
+  // City + practice area pages
+  const cityPracticeRoutes = firmConfig.cityPracticePages.map((page) => ({
+    url: `${siteConfig.url}/${page.city}/${page.practiceSlug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }))
+
+  return [...routes, ...practiceAreaRoutes, ...locationRoutes, ...cityPracticeRoutes, ...blogRoutes]
 }

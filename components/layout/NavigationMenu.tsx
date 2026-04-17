@@ -40,8 +40,8 @@ function DropdownMenu({ item, onItemClick }: { item: NavDropdown; onItemClick?: 
 
       {/* Dropdown Panel */}
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-[320px] bg-navy-900 border border-navy-700 rounded-xl shadow-xl shadow-black/30 p-6 z-50">
-          <div className="space-y-4">
+        <div className="absolute top-full left-0 mt-2 w-[580px] bg-navy-900 border border-navy-700 rounded-xl shadow-xl shadow-black/30 p-6 z-50">
+          <div className="grid grid-cols-2 gap-6">
             {item.items.map((section) => (
               <div key={section.title}>
                 <h4 className="text-xs font-bold uppercase tracking-wider text-gold-500 mb-3">

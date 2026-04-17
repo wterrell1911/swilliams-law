@@ -212,6 +212,59 @@ export function generateLocationSchema(location: {
   } as WithContext<LocalBusiness>
 }
 
+export function generateLegalServicePageSchema(page: {
+  practiceLabel: string
+  cityName: string
+  state: string
+  description: string
+  url: string
+  location: {
+    streetAddress: string
+    city: string
+    state: string
+    postalCode: string
+    country: string
+    latitude: number
+    longitude: number
+    phone: string
+  }
+}): WithContext<LocalBusiness> {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    name: `${siteConfig.name} — ${page.practiceLabel} in ${page.cityName}`,
+    image: `${siteConfig.url}/images/swilliamslaw/logo.png`,
+    url: page.url,
+    telephone: page.location.phone,
+    email: siteConfig.contact.email,
+    description: page.description,
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: page.location.streetAddress,
+      addressLocality: page.location.city,
+      addressRegion: page.location.state,
+      postalCode: page.location.postalCode,
+      addressCountry: page.location.country,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: page.location.latitude,
+      longitude: page.location.longitude,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+    priceRange: "Free Consultation",
+    areaServed: {
+      "@type": "State",
+      name: page.state,
+    },
+  } as WithContext<LocalBusiness>
+}
+
 export function generatePersonSchema(attorney: {
   name: string
   title: string

@@ -33,13 +33,23 @@ export const mainNavigation: NavEntry[] = [
     name: "Practice Areas",
     items: [
       {
-        title: "Our Practice Areas",
+        title: "Atlanta, GA",
         items: [
-          { name: "Car Accidents", href: "/practice-areas/car-accidents", description: "Auto collision and car wreck cases" },
-          { name: "Truck Accidents", href: "/practice-areas/truck-accidents", description: "18-wheeler and commercial vehicle crashes" },
-          { name: "Workers' Compensation", href: "/practice-areas/workers-compensation", description: "Workplace injuries and workers' comp claims" },
-          { name: "Slip and Fall", href: "/practice-areas/slip-and-fall", description: "Premises liability and property owner negligence" },
-          { name: "Wrongful Death", href: "/practice-areas/wrongful-death", description: "Fatal accident and wrongful death claims" },
+          { name: "Personal Injury Lawyer", href: "/atlanta/personal-injury-lawyer", description: "Full-service personal injury representation" },
+          { name: "Car Accident Lawyer", href: "/atlanta/car-accident-lawyer", description: "Auto collision and car wreck cases" },
+          { name: "Workers' Comp Lawyer", href: "/atlanta/workers-compensation-lawyer", description: "Workplace injuries and workers' comp claims" },
+          { name: "Wrongful Death Attorney", href: "/atlanta/wrongful-death-attorney", description: "Fatal accident and wrongful death claims" },
+          { name: "Slip & Fall Lawyer", href: "/atlanta/slip-and-fall-lawyer", description: "Premises liability and property owner negligence" },
+        ],
+      },
+      {
+        title: "Jackson, MS",
+        items: [
+          { name: "Personal Injury Lawyer", href: "/jackson/personal-injury-lawyer", description: "Full-service personal injury representation" },
+          { name: "Car Accident Lawyer", href: "/jackson/car-accident-lawyer", description: "Auto collision and car wreck cases" },
+          { name: "Workers' Comp Lawyer", href: "/jackson/workers-compensation-lawyer", description: "Workplace injuries and workers' comp claims" },
+          { name: "Wrongful Death Attorney", href: "/jackson/wrongful-death-attorney", description: "Fatal accident and wrongful death claims" },
+          { name: "Slip & Fall Lawyer", href: "/jackson/slip-and-fall-lawyer", description: "Premises liability and property owner negligence" },
         ],
       },
     ],

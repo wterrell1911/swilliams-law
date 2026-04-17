@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import { EmptyState } from "@/components/portal/EmptyState"
 import { CardSkeleton } from "@/components/portal/LoadingSkeleton"
+import Link from "next/link"
 import { cn } from "@/lib/utils"
 import type { Audit, Prospect } from "@/lib/types/portal"
 
@@ -893,13 +894,12 @@ function ValueTab({ audit }: { audit: AuditData }) {
 
       {/* CTA */}
       <div className="text-center pt-4">
-        <a 
-          // TODO: Phase 3 — read booking link from firmConfig
+        <Link
           href="/contact"
           className="inline-block px-6 py-3 bg-gold-500 text-navy-950 font-semibold rounded-lg hover:bg-gold-400 transition-colors"
         >
           Schedule a Free Consultation
-        </a>
+        </Link>
       </div>
     </div>
   )

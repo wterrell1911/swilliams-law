@@ -116,9 +116,9 @@ export default async function CityPracticeAreaPage({ params }: Props) {
       </div>
 
       {/* MDX Content */}
-      <div className="bg-warmWhite py-16">
+      <div className="bg-navy-950 py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
-          <article className="prose prose-lg prose-navy max-w-none">
+          <article className="prose prose-lg max-w-none">
             <MDXRemote source={page.content} components={mdxComponents} />
           </article>
         </div>

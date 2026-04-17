@@ -40,7 +40,8 @@ function DropdownMenu({ item, onItemClick }: { item: NavDropdown; onItemClick?: 
 
       {/* Dropdown Panel */}
       {isOpen && (
-        <div className="absolute top-full left-0 mt-2 w-[580px] bg-navy-900 border border-navy-700 rounded-xl shadow-xl shadow-black/30 p-6 z-50">
+        <div className="absolute top-full left-0 pt-2 w-[580px] z-50">
+          <div className="bg-navy-900 border border-navy-700 rounded-xl shadow-xl shadow-black/30 p-6">
           <div className="grid grid-cols-2 gap-6">
             {item.items.map((section) => (
               <div key={section.title}>
@@ -86,6 +87,7 @@ function DropdownMenu({ item, onItemClick }: { item: NavDropdown; onItemClick?: 
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
+          </div>
           </div>
         </div>
       )}

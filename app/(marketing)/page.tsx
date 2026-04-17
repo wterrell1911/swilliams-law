@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/home/HeroSection"
 import { CredibilityBar } from "@/components/home/CredibilityBar"
+import { AffiliationsBar } from "@/components/home/AffiliationsBar"
 import { PositioningStatement } from "@/components/home/PositioningStatement"
 import { ThreePillarsSection } from "@/components/home/ThreePillarsSection"
 import { WhyChooseUsSection } from "@/components/home/Why302Section"
@@ -21,6 +22,7 @@ export default function Home() {
       <JsonLd data={faqSchema} />
       <HeroSection />
       <CredibilityBar />
+      <AffiliationsBar />
       <PositioningStatement />
       <ThreePillarsSection />
       <StatBlockSection />

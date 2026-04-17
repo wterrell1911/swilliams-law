@@ -147,7 +147,26 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Section 3: Our Approach */}
+      {/* Section 3: Affiliations */}
+      <section className="bg-white py-16 px-6 border-b border-navy-900/10">
+        <div className="max-w-4xl mx-auto text-center">
+          <p className="uppercase text-xs tracking-[0.2em] text-gold-500 mb-6">
+            Professional Affiliations
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+            {firmConfig.affiliations.map((affiliation) => (
+              <div
+                key={affiliation.shortName}
+                className="px-5 py-2.5 border border-navy-900/10 rounded-lg bg-warmWhite text-navy-900 text-sm font-medium"
+              >
+                {affiliation.name}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: Our Approach */}
       <section className="bg-navy-950 py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-display font-bold text-warmWhite mb-4 text-center">

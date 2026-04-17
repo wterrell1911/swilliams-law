@@ -202,10 +202,36 @@ export const firmConfig = {
     },
   ],
 
+  affiliations: [
+    { name: "State Bar of Georgia", shortName: "State Bar of GA" },
+    { name: "The Mississippi Bar", shortName: "Mississippi Bar" },
+    { name: "American Bar Association", shortName: "ABA" },
+    { name: "Georgia Trial Lawyers Association", shortName: "GTLA" },
+    { name: "Georgia Association for Women Lawyers", shortName: "GAWL" },
+  ],
+
   testimonials: [
     {
       quote:
-        "Won and done in only 6 months! Attorney Williams fought hard for me and got results faster than I ever expected.",
+        "I was completely satisfied with S. Williams Law Firm, LLC. The level of professionalism, the urgency to make sure I was treated for my injuries, and the overall process was great. If you are in need of reliable attorney in Atlanta, I would highly recommend S. Williams Law Firm, LLC.",
+      clientName: "Former Client",
+      caseType: "Personal Injury Client",
+      rating: 5,
+      source: "Google",
+      featured: true,
+    },
+    {
+      quote:
+        "I loved my experience working with Suneisha Williams. She was very thorough and persistent in helping me get the best settlement possible. She was very professional in handling business and she has gained me as client for a lifetime.",
+      clientName: "Former Client",
+      caseType: "Personal Injury Client",
+      rating: 5,
+      source: "Google",
+      featured: true,
+    },
+    {
+      quote:
+        "Received great compliments about Suneisha and how quickly she gets things moving! Gave her a call, only 6 months of working with her. Won and done!!! Took very good care of me!",
       clientName: "Former Client",
       caseType: "Workers' Compensation Client",
       rating: 5,
@@ -214,21 +240,39 @@ export const firmConfig = {
     },
     {
       quote:
-        "After my car accident, I didn't know where to turn. S. Williams Law Firm treated me like family and got me the compensation I deserved.",
-      clientName: "Car Accident Client",
+        "She kept me in the know of the details of my case at all times. She fought with the insurance company for me to get what I deserved.",
+      clientName: "Former Client",
       caseType: "Car Accident Client",
       rating: 5,
       source: "Google",
-      featured: true,
+      featured: false,
     },
     {
       quote:
-        "Attorney Williams is truly in a league of her own. Professional, caring, and relentless. I can't recommend her enough.",
-      clientName: "Personal Injury Client",
+        "She basically handled everything starting from the scene of the accident and got me right.",
+      clientName: "Former Client",
+      caseType: "Car Accident Client",
+      rating: 5,
+      source: "Google",
+      featured: false,
+    },
+    {
+      quote:
+        "Very Professional, and any questions she was just a text away!",
+      clientName: "Former Client",
       caseType: "Personal Injury Client",
       rating: 5,
       source: "Google",
-      featured: true,
+      featured: false,
+    },
+    {
+      quote:
+        "Suneisha Williams handle my case in a professional and prompt manner.",
+      clientName: "Former Client",
+      caseType: "Personal Injury Client",
+      rating: 5,
+      source: "Google",
+      featured: false,
     },
   ],
 

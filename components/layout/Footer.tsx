@@ -72,6 +72,16 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/testimonials" className="text-sm text-warmWhite/70 hover:text-gold-500 transition-colors">
+                  Testimonials
+                </Link>
+              </li>
+              <li>
+                <Link href="/community" className="text-sm text-warmWhite/70 hover:text-gold-500 transition-colors">
+                  Community
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-sm text-warmWhite/70 hover:text-gold-500 transition-colors">
                   Legal Blog
                 </Link>

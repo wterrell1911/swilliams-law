@@ -50,6 +50,11 @@ export const mainNavigation: NavEntry[] = [
     description: "Our firm and attorney",
   },
   {
+    name: "Community",
+    href: "/community",
+    description: "Scholarships and community service",
+  },
+  {
     name: "Blog",
     href: "/blog",
     description: "Legal insights and resources",
@@ -71,9 +76,11 @@ export const footerLinks = {
   ],
   resources: [
     { name: "Blog", href: "/blog" },
+    { name: "Testimonials", href: "/testimonials" },
   ],
   company: [
     { name: "About", href: "/about" },
+    { name: "Community", href: "/community" },
     { name: "Contact", href: "/contact" },
     { name: "Privacy Policy", href: "/privacy" },
     { name: "Terms of Service", href: "/terms" },
